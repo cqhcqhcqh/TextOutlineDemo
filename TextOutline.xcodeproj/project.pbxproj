@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55DAD45A686B761B0044F8C5 /* Pods_TextOutline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50AF0D800C7430B457FF9D1 /* Pods_TextOutline.framework */; };
 		632FE0492403BF03008C15B8 /* UIFont+Versa.m in Sources */ = {isa = PBXBuildFile; fileRef = 632FE0482403BF03008C15B8 /* UIFont+Versa.m */; };
 		632FE0562403C739008C15B8 /* ChekiangShuKeSungforUncleButter.otf in Resources */ = {isa = PBXBuildFile; fileRef = 632FE04D2403C738008C15B8 /* ChekiangShuKeSungforUncleButter.otf */; };
 		632FE0572403C739008C15B8 /* FZBYFKSK--GBK1-0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 632FE04E2403C738008C15B8 /* FZBYFKSK--GBK1-0.ttf */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CB53D02C9D21E7F937A1039 /* Pods-TextOutline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextOutline.debug.xcconfig"; path = "Target Support Files/Pods-TextOutline/Pods-TextOutline.debug.xcconfig"; sourceTree = "<group>"; };
 		632FE0472403BF03008C15B8 /* UIFont+Versa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Versa.h"; sourceTree = "<group>"; };
 		632FE0482403BF03008C15B8 /* UIFont+Versa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Versa.m"; sourceTree = "<group>"; };
 		632FE04D2403C738008C15B8 /* ChekiangShuKeSungforUncleButter.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChekiangShuKeSungforUncleButter.otf; sourceTree = "<group>"; };
@@ -48,6 +50,8 @@
 		83638F672188133100C91A7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		83638F702188137300C91A7A /* PTLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTLabel.h; sourceTree = "<group>"; };
 		83638F712188137300C91A7A /* PTLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTLabel.m; sourceTree = "<group>"; };
+		887DF88079572E9C6CB6A798 /* Pods-TextOutline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextOutline.release.xcconfig"; path = "Target Support Files/Pods-TextOutline/Pods-TextOutline.release.xcconfig"; sourceTree = "<group>"; };
+		E50AF0D800C7430B457FF9D1 /* Pods_TextOutline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextOutline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,17 +59,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55DAD45A686B761B0044F8C5 /* Pods_TextOutline.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2167ACAF580FD2C4196F6696 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CB53D02C9D21E7F937A1039 /* Pods-TextOutline.debug.xcconfig */,
+				887DF88079572E9C6CB6A798 /* Pods-TextOutline.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		83638F4C2188133000C91A7A = {
 			isa = PBXGroup;
 			children = (
 				83638F572188133000C91A7A /* TextOutline */,
 				83638F562188133000C91A7A /* Products */,
+				2167ACAF580FD2C4196F6696 /* Pods */,
+				9CADA40C6F9705EB4C175C2F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +122,14 @@
 			path = TextOutline;
 			sourceTree = "<group>";
 		};
+		9CADA40C6F9705EB4C175C2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E50AF0D800C7430B457FF9D1 /* Pods_TextOutline.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +137,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83638F6B2188133100C91A7A /* Build configuration list for PBXNativeTarget "TextOutline" */;
 			buildPhases = (
+				C12A2640068B3779816808EC /* [CP] Check Pods Manifest.lock */,
 				83638F512188133000C91A7A /* Sources */,
 				83638F522188133000C91A7A /* Frameworks */,
 				83638F532188133000C91A7A /* Resources */,
@@ -177,6 +203,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C12A2640068B3779816808EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextOutline-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		83638F512188133000C91A7A /* Sources */ = {
@@ -327,6 +378,7 @@
 		};
 		83638F6C2188133100C91A7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CB53D02C9D21E7F937A1039 /* Pods-TextOutline.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -344,6 +396,7 @@
 		};
 		83638F6D2188133100C91A7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 887DF88079572E9C6CB6A798 /* Pods-TextOutline.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
